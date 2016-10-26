@@ -22,7 +22,7 @@ export default class extends React.Component {
 
     render () {
         return (
-            <form onSubmit={this.props.onSend(this.state)}>
+            <form onSubmit={() => this.props.onSend(this.state)}>
                 <div className="form-group">
                     <label>Item name: </label>
                     <input type="text" id="item-name-field" onChange={this.updateItemName} />
